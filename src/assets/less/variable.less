@@ -1,0 +1,60 @@
+/* 公共样式 */
+
+// 颜色样式
+// 背景
+@pageBg: #fff;
+@textBg: #f6fafe;
+// @footerBg: #f2f2f2 ;
+//@footerBg:#272727;
+@footerBg: #38455E;
+@bg-normal: #f5f6f7;
+
+// 字体
+@color-w: #ffffff;
+@color-b: #0062d0;
+@color-r: #dc2d34;
+@color-9: #999999;
+@color-6: #666666;
+@color-3: #333333;
+@color-23: #232323;
+@color-0: #000000;
+@color-line: #d8d8d8;
+@color-bg: rgba(166, 200, 238, 0.1);
+@color-wf: rgba(255, 255, 255, 0.8);
+
+// 字体
+@pf-re: Microsoft Yahei;
+@pf-me: PingFangSC-Medium;
+@ap-re: AlibabaPuHuiTi-Regular;
+
+// 字体样式
+@fs-lg: 20px;
+@fs-md: 16px;
+@fs-sm: 14px;
+@fs-mini: 12px;
+
+// shadow
+@box-shadow: 0 0 15px 0 rgba(0, 98, 208, 0.15);
+
+// 头部样式
+@headerHeight: 64px;
+
+// 页面整体内部宽度
+@pageWidth: 1200px;
+
+//
+.common-content (@content: 'RECOMMEND') {
+  &::after {
+    bottom: -15px;
+    left: 50%;
+    width: 100%;
+    content: @content;
+    position: absolute;
+    transform: translateX(-50%);
+    color: @color-bg;
+    font-size: 58px;
+    font-family: @ap-re;
+    z-index: 1;
+    letter-spacing: 2px;
+  }
+}
